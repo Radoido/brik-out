@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cng285hslu0ww"]
+
+[ext_resource type="Texture2D" uid="uid://x2bwfvxa0gvk" path="res://sprites/playerBlock/nicolas.jpg" id="1_5o5gp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mvsta"]
+size = Vector2(7.46667, 3.93333)
+
+[node name="playerBlock" type="CharacterBody2D"]
+
+[node name="playerColissionBlock" type="CollisionShape2D" parent="."]
+scale = Vector2(15, 15)
+shape = SubResource("RectangleShape2D_mvsta")
+one_way_collision_margin = 0.0
+
+[node name="player2DSprite" type="Sprite2D" parent="."]
+position = Vector2(-7.62939e-06, -9.29832e-06)
+rotation = 1.5708
+scale = Vector2(0.225554, 0.283583)
+texture = ExtResource("1_5o5gp")
