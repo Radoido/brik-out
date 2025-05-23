@@ -1,6 +1,8 @@
 class_name player extends CharacterBody2D
 
+
 var acceleration : float = 200.0
+var direction : Vector2 = Vector2.ZERO
 
 
 
@@ -9,7 +11,6 @@ func _ready() -> void:
 	
 	# Called frame per frame
 func _process(delta: float) -> void: 
-	var direction : Vector2 = Vector2.ZERO
 	
 	direction.x = Input.get_action_strength("movePlayerBlockRight") - Input.get_action_strength("movePlayerBlockLeft")
 	 

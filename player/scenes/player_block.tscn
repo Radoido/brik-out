@@ -16,7 +16,8 @@ shape = SubResource("RectangleShape2D_mvsta")
 one_way_collision_margin = 0.0
 
 [node name="player2DSprite" type="Sprite2D" parent="."]
-position = Vector2(-7.62939e-06, -9.29832e-06)
-rotation = 1.5708
-scale = Vector2(0.225554, 0.283583)
+position = Vector2(-0.0485499, 0.0671371)
+scale = Vector2(0.440389, 0.149911)
 texture = ExtResource("1_5o5gp")
+
+[node name="playerAnimation" type="AnimationPlayer" parent="."]
